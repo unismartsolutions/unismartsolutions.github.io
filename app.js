@@ -1,5 +1,18 @@
 const { useState, useEffect, useRef } = React;
-const { Moon, Sun, Mail, MapPin, Github, Linkedin, ExternalLink, Menu, Star, StarHalf } = lucide;
+
+// Create icon components from lucide
+const {
+    Moon,
+    Sun,
+    Mail,
+    MapPin,
+    Github,
+    Linkedin,
+    ExternalLink,
+    Menu,
+    Star,
+    StarHalf
+} = lucide;
 
 // Node class for network points
 class Node {
