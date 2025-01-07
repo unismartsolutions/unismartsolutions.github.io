@@ -28,44 +28,56 @@ body {
 
 /* Component styles */
 .card {
-    @apply rounded-lg border border-gray-200 shadow-sm overflow-hidden;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(229, 231, 235, 1);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    overflow: hidden;
 }
 
 .card-header {
-    @apply p-6 border-b border-gray-200;
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(229, 231, 235, 1);
 }
 
 .card-content {
-    @apply p-6;
+    padding: 1.5rem;
 }
 
 .tabs {
-    @apply space-y-8;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .tabs-list {
-    @apply flex space-x-4 border-b border-gray-200;
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid rgba(229, 231, 235, 1);
 }
 
 .tabs-trigger {
-    @apply px-4 py-2 font-medium cursor-pointer;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 .tabs-trigger[data-state="active"] {
-    @apply text-blue-500 border-b-2 border-blue-500;
+    color: rgb(59, 130, 246);
+    border-bottom: 2px solid rgb(59, 130, 246);
 }
 
 .tabs-content {
-    @apply mt-4;
+    margin-top: 1rem;
 }
 
 /* Dark mode styles */
 .dark {
-    @apply bg-gray-900 text-white;
+    background-color: rgb(17, 24, 39);
+    color: white;
 }
 
 .dark .card {
-    @apply bg-gray-800 border-gray-700;
+    background-color: rgb(31, 41, 55);
+    border-color: rgb(55, 65, 81);
 }
 
 /* Network background canvas */
