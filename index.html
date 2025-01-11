@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/lucide-react@latest/dist/style.css" rel="stylesheet" />
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.umd.js"></script>
 </head>
+
 <body class="dark-mode">
     <canvas id="network-canvas"></canvas>
     <nav>
@@ -22,32 +24,96 @@
         </div>
     </nav>
     <main>
-        <section>
+        <section class="intro">
             <div class="card">
-                <div class="card-content">
-                    <div class="profile-info">
-                        <img src="assets/placeholder.png" alt="Tevin Richard">
-                        <div>
-                            <h2>Tevin Richard</h2>
-                            <p>Data Science Manager | Chemical Engineer | AI Enthusiast</p>
-                            <p><i data-lucide="map-pin"></i> Gauteng, South Africa</p>
-                        </div>
+                <div class="card-content profile-info">
+                    <img src="assets/placeholder.png" alt="Tevin Richard">
+                    <div>
+                        <h2>Tevin Richard</h2>
+                        <p>Data Science Manager | Chemical Engineer | AI Enthusiast</p>
+                        <p><i data-lucide="map-pin"></i> Gauteng, South Africa</p>
                     </div>
                 </div>
             </div>
         </section>
+
         <div class="tabs">
             <div class="tabs-list">
                 <button class="tab-trigger active" data-tab="experience">Experience</button>
                 <button class="tab-trigger" data-tab="skills">Skills</button>
                 <button class="tab-trigger" data-tab="tech">Tech Stack</button>
             </div>
+
             <div class="tab-content active" id="experience">
+                <div class="card">
+                    <div class="card-content experience-item">
+                        <img src="assets/placeholder.png" alt="Company Logo" class="company-logo">
+                        <div>
+                            <h3>Senior Data Scientist</h3>
+                            <p class="company-name">Tech Corp</p>
+                            <p class="date">2020 - Present</p>
+                            <p>Led a team of 5 data scientists, developed ML models, and improved processes by 40%.</p>
+                        </div>
+                    </div>
                 </div>
-            <div class="tab-content" id="skills"></div>
-            <div class="tab-content" id="tech"></div>
+                <div class="card">
+                    <div class="card-content experience-item">
+                        <img src="assets/placeholder.png" alt="Company Logo" class="company-logo">
+                        <div>
+                            <h3>Data Engineer</h3>
+                            <p class="company-name">Data Solutions Inc</p>
+                            <p class="date">2018 - 2020</p>
+                            <p>Designed and maintained data pipelines, reduced processing costs by 60%.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="skills">
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i data-lucide="brain-circuit"></i>
+                        <h4>Machine Learning</h4>
+                        <div class="proficiency">
+                            <div class="proficiency-bar" style="width: 100%;"></div>
+                        </div>
+                        <p class="skill-description">Advanced model development and deployment.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i data-lucide="code-2"></i>
+                        <h4>Python</h4>
+                        <div class="proficiency">
+                            <div class="proficiency-bar" style="width: 100%;"></div>
+                        </div>
+                        <p class="skill-description">Expert level, 8+ years experience.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i data-lucide="database"></i>
+                        <h4>SQL</h4>
+                        <div class="proficiency">
+                            <div class="proficiency-bar" style="width: 100%;"></div>
+                        </div>
+                        <p class="skill-description">Complex queries and database design.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tech">
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <img src="assets/placeholder.png" alt="Python Logo" class="tech-logo">
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-card">
+                        <img src="assets/placeholder.png" alt="TensorFlow Logo" class="tech-logo">
+                        <span>TensorFlow</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
