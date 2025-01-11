@@ -1,12 +1,11 @@
-/* style.css */
 body {
     font-family: sans-serif;
     margin: 0;
-    background-color: #18181b; /* Dark background */
-    color: #e2e8f0; /* Light text */
+    background-color: #18181b;
+    color: #e2e8f0;
     display: flex;
     min-height: 100vh;
-    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    overflow-x: hidden;
 }
 
 .content-wrapper {
@@ -76,7 +75,7 @@ nav.main-nav {
     display: flex;
     gap: 1rem;
     overflow-x: auto;
-    white-space: nowrap; /* Prevent nav items from wrapping */
+    white-space: nowrap;
 }
 
 .nav-link {
@@ -124,7 +123,7 @@ nav.main-nav {
     font-size: 2rem;
     margin-bottom: 0.5rem;
     display: block;
-    color: #6366f1; /* Example icon color */
+    color: #6366f1;
 }
 
 .service-card h4 {
@@ -134,7 +133,7 @@ nav.main-nav {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .content-wrapper {
-        flex-direction: column; /* Stack sidebar and main content */
+        flex-direction: column;
     }
 
     .sidebar {
@@ -143,4 +142,58 @@ nav.main-nav {
         position: static;
         padding: 1rem;
     }
+}
+#network-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place behind other content */
+    pointer-events: none;
+}
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #111827;
+}
+
+body.light-mode .sidebar {
+    background-color: #ffffff;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .main-nav {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .nav-link {
+    color: #4b5563;
+}
+
+body.light-mode .nav-link.active,
+body.light-mode .nav-link:hover {
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
+
+body.light-mode .service-card {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .service-card i {
+    color: #3b82f6;
+}
+
+.profile-card{
+    background-color: #27272a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.profile-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
