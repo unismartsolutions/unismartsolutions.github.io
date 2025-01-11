@@ -12,106 +12,63 @@
 
 <body class="dark-mode">
     <canvas id="network-canvas"></canvas>
-    <nav>
-        <h1>Tevin Richard</h1>
-        <div>
-            <button id="dark-mode-toggle">
-                <i data-lucide="sun"></i>
-            </button>
-            <a href="mailto:tevinric@gmail.com"><i data-lucide="mail"></i></a>
-            <a href="#"><i data-lucide="github"></i></a>
-            <a href="#"><i data-lucide="linkedin"></i></a>
-        </div>
-    </nav>
-    <main>
-        <section class="intro">
-            <div class="card">
-                <div class="card-content profile-info">
-                    <img src="assets/placeholder.png" alt="Tevin Richard">
-                    <div>
-                        <h2>Tevin Richard</h2>
-                        <p>Data Science Manager | Chemical Engineer | AI Enthusiast</p>
-                        <p><i data-lucide="map-pin"></i> Gauteng, South Africa</p>
+    <main class="content-wrapper">
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="assets/profile.jpg" alt="Tevin Richard">
+                <h2>Tevin Richard</h2>
+                <p>Data Science Manager | Chemical Engineer | AI Enthusiast</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i data-lucide="mail"></i>
+                        <a href="mailto:tevinric@gmail.com">tevinric@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="map-pin"></i>
+                        <span>Sandton, Gauteng, South Africa</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="main-content">
+            <nav class="main-nav">
+                <a href="#" class="nav-link active">About</a>
+                <a href="#" class="nav-link">Resume</a>
+                <a href="#" class="nav-link">Portfolio</a>
+                <a href="#" class="nav-link">Blog</a>
+                <a href="#" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="about-section">
+                <h2>About Me</h2>
+                <p>I'm a Data Science Manager and Chemical Engineer from Sandton, South Africa, passionate about AI and its transformative potential. I enjoy tackling complex challenges and developing innovative solutions. My goal is to leverage data science to drive positive change and contribute to cutting-edge advancements in the field.</p>
+                <div class="what-im-doing">
+                    <h3>What I'm Doing</h3>
+                    <div class="services-grid">
+                      <div class="service-card">
+                        <i data-lucide="code"></i>
+                        <h4>Data Analysis</h4>
+                        <p>Providing in-depth data analysis to extract valuable insights and drive informed decision-making.</p>
+                      </div>
+                        <div class="service-card">
+                            <i data-lucide="bar-chart-3"></i>
+                            <h4>Machine Learning Model Development</h4>
+                            <p>Building and deploying robust machine learning models to solve real-world problems.</p>
+                        </div>
+                        <div class="service-card">
+                            <i data-lucide="database"></i>
+                            <h4>Data Engineering</h4>
+                            <p>Designing and implementing efficient data pipelines and infrastructure for scalable data processing.</p>
+                        </div>
+                        <div class="service-card">
+                            <i data-lucide="trending-up"></i>
+                            <h4>AI Strategy Consulting</h4>
+                            <p>Advising businesses on how to leverage AI technologies to achieve their strategic objectives.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <div class="tabs">
-            <div class="tabs-list">
-                <button class="tab-trigger active" data-tab="experience">Experience</button>
-                <button class="tab-trigger" data-tab="skills">Skills</button>
-                <button class="tab-trigger" data-tab="tech">Tech Stack</button>
-            </div>
-
-            <div class="tab-content active" id="experience">
-                <div class="card">
-                    <div class="card-content experience-item">
-                        <img src="assets/placeholder.png" alt="Company Logo" class="company-logo">
-                        <div>
-                            <h3>Senior Data Scientist</h3>
-                            <p class="company-name">Tech Corp</p>
-                            <p class="date">2020 - Present</p>
-                            <p>Led a team of 5 data scientists, developed ML models, and improved processes by 40%.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content experience-item">
-                        <img src="assets/placeholder.png" alt="Company Logo" class="company-logo">
-                        <div>
-                            <h3>Data Engineer</h3>
-                            <p class="company-name">Data Solutions Inc</p>
-                            <p class="date">2018 - 2020</p>
-                            <p>Designed and maintained data pipelines, reduced processing costs by 60%.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-content" id="skills">
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <i data-lucide="brain-circuit"></i>
-                        <h4>Machine Learning</h4>
-                        <div class="proficiency">
-                            <div class="proficiency-bar" style="width: 100%;"></div>
-                        </div>
-                        <p class="skill-description">Advanced model development and deployment.</p>
-                    </div>
-                    <div class="skill-card">
-                        <i data-lucide="code-2"></i>
-                        <h4>Python</h4>
-                        <div class="proficiency">
-                            <div class="proficiency-bar" style="width: 100%;"></div>
-                        </div>
-                        <p class="skill-description">Expert level, 8+ years experience.</p>
-                    </div>
-                    <div class="skill-card">
-                        <i data-lucide="database"></i>
-                        <h4>SQL</h4>
-                        <div class="proficiency">
-                            <div class="proficiency-bar" style="width: 100%;"></div>
-                        </div>
-                        <p class="skill-description">Complex queries and database design.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-content" id="tech">
-                <div class="tech-grid">
-                    <div class="tech-card">
-                        <img src="assets/placeholder.png" alt="Python Logo" class="tech-logo">
-                        <span>Python</span>
-                    </div>
-                    <div class="tech-card">
-                        <img src="assets/placeholder.png" alt="TensorFlow Logo" class="tech-logo">
-                        <span>TensorFlow</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
     </main>
     <script src="script.js"></script>
 </body>
