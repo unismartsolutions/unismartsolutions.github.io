@@ -3,41 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tevin Richard - Portfolio</title>
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Custom styles -->
-    <link href="styles.css" rel="stylesheet">
-    
-    <!-- React and dependencies -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>Tevin Richard - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/lucide-react@latest/dist/style.css" rel="stylesheet" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.umd.js"></script>
 </head>
-<body>
-    <div id="root"></div>
-
-    <script>
-        // Initialize lucide icons
-        lucide.createIcons();
-    </script>
-
-    <script type="text/babel" data-type="module">
-        // Import the Portfolio component
-        const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(
-            <React.StrictMode>
-                <Portfolio />
-            </React.StrictMode>
-        );
-    </script>
-    
-    <!-- Load the main app code -->
-    <script type="text/babel" src="app.js"></script>
+<body class="dark-mode">
+    <canvas id="network-canvas"></canvas>
+    <nav>
+        <h1>Tevin Richard</h1>
+        <div>
+            <button id="dark-mode-toggle">
+                <i data-lucide="sun"></i>
+            </button>
+            <a href="mailto:tevinric@gmail.com"><i data-lucide="mail"></i></a>
+            <a href="#"><i data-lucide="github"></i></a>
+            <a href="#"><i data-lucide="linkedin"></i></a>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="card">
+                <div class="card-content">
+                    <div class="profile-info">
+                        <img src="assets/placeholder.png" alt="Tevin Richard">
+                        <div>
+                            <h2>Tevin Richard</h2>
+                            <p>Data Science Manager | Chemical Engineer | AI Enthusiast</p>
+                            <p><i data-lucide="map-pin"></i> Gauteng, South Africa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="tabs">
+            <div class="tabs-list">
+                <button class="tab-trigger active" data-tab="experience">Experience</button>
+                <button class="tab-trigger" data-tab="skills">Skills</button>
+                <button class="tab-trigger" data-tab="tech">Tech Stack</button>
+            </div>
+            <div class="tab-content active" id="experience">
+                </div>
+            <div class="tab-content" id="skills"></div>
+            <div class="tab-content" id="tech"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
