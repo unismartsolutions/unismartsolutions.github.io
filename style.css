@@ -1,8 +1,7 @@
-/* Basic styling to mimic the React version */
 body {
     font-family: sans-serif;
     margin: 0;
-    background-color: #111827; /* Dark mode default */
+    background-color: #111827;
     color: white;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -47,7 +46,7 @@ nav div {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -102,6 +101,7 @@ nav div {
 .tab-content.active {
     display: block;
 }
+
 #network-canvas {
     position: fixed;
     top: 0;
@@ -111,4 +111,22 @@ nav div {
     z-index: 0;
     pointer-events: none;
 }
-/* Add more styles as needed */
+
+/* Enhanced Styles */
+.intro {
+    margin-bottom: 2rem;
+}
+
+.profile-info {
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .profile-info {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+.company-logo
